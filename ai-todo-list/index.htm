@@ -5,6 +5,39 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Todo List App</title>
 	<style>
+			.storage-controls {
+				display: flex;
+				gap: 8px;
+				margin: 16px 0 8px 0;
+				justify-content: center;
+				width: 100%;
+				box-sizing: border-box;
+			}
+			.storage-controls select {
+				flex: 1;
+				min-width: 0;
+				padding: 6px 10px;
+				border-radius: 4px;
+				border: 1px solid #ccc;
+			}
+			.storage-controls button {
+				flex: 0 0 auto;
+				padding: 6px 10px;
+				border-radius: 4px;
+				border: 1px solid #ccc;
+				background: #007bff;
+				color: #fff;
+				border: none;
+				cursor: pointer;
+			}
+			.storage-controls button:hover { background: #0056b3; }
+			.storage-controls .remove-btn { background: #dc3545; }
+			.storage-controls .remove-btn:hover { background: #a71d2a; }
+			@media (min-width: 0px) {
+				.storage-controls, #todo-form {
+					width: 100%;
+				}
+			}
 		body { font-family: Arial, sans-serif; background: #f4f4f4; margin: 0; padding: 0; }
 		.container { max-width: 400px; margin: 40px auto; background: #fff; padding: 24px 32px 32px 32px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
 		h2 { text-align: center; margin-bottom: 24px; }
@@ -28,6 +61,16 @@
 <body>
 	<div class="container">
 		<h2>Todo List</h2>
+		<div class="storage-controls">
+			<select id="storage-duration">
+				<option value="1">1 day</option>
+				<option value="7">7 days</option>
+				<option value="30">30 days</option>
+				<option value="90">90 days</option>
+			</select>
+			<button id="save-btn" type="button">Save</button>
+			<button id="remove-btn" type="button" class="remove-btn">Remove from Storage</button>
+		</div>
 		<form id="todo-form">
 			<input type="text" id="todo-input" placeholder="Add a new todo..." required />
 			<button type="submit" id="add-btn">Add</button>
@@ -38,6 +81,10 @@
 		const todoForm = document.getElementById('todo-form');
 		const todoInput = document.getElementById('todo-input');
 		const todoList = document.getElementById('todo-list');
+		const saveBtn = document.getElementById('save-btn');
+		const removeBtn = document.getElementById('remove-btn');
+		const storageDuration = document.getElementById('storage-duration');
+		const STORAGE_KEY = 'ai-todo-list';
 		let todos = [];
 
 		function renderTodos() {
@@ -152,6 +199,49 @@
 				renderTodos();
 			}
 		};
+
+		// --- Local Storage Functions ---
+		function saveTodosToStorage() {
+			const days = parseInt(storageDuration.value, 10);
+			const now = Date.now();
+			const expiry = now + days * 24 * 60 * 60 * 1000;
+			const data = { todos, expiry };
+			localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+			alert('Todo list saved for ' + days + ' day' + (days > 1 ? 's' : ''));
+		}
+
+		function loadTodosFromStorage() {
+			const data = localStorage.getItem(STORAGE_KEY);
+			if (!data) return false;
+			try {
+				const parsed = JSON.parse(data);
+				if (parsed.expiry && parsed.expiry > Date.now() && Array.isArray(parsed.todos)) {
+					todos = parsed.todos;
+					return true;
+				} else {
+					// Expired
+					localStorage.removeItem(STORAGE_KEY);
+					return false;
+				}
+			} catch {
+				return false;
+			}
+		}
+
+		function removeTodosFromStorage() {
+			localStorage.removeItem(STORAGE_KEY);
+			alert('Todo list removed from storage.');
+		}
+
+		// --- Event Listeners for Storage ---
+		saveBtn.onclick = saveTodosToStorage;
+		removeBtn.onclick = removeTodosFromStorage;
+
+		// --- On Load: Try to load from storage ---
+		if (!loadTodosFromStorage()) {
+			todos = [];
+		}
+		renderTodos();
 
 		function editTodo(idx) {
 			todos = todos.map((todo, i) => ({ ...todo, editing: i === idx }));
