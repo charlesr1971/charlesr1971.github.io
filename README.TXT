@@ -47,7 +47,7 @@ Speed and simplicity are valued over complexity. If an idea can be expressed in 
 
 ## 🔗 Visit the Site
 
-👉 [mrkodama.github.io](https://mrkodama.github.io)
+👉 [mrkodama.github.io](https://mrkodama.github.io/ai-todo-list/)
 
 ## 📬 Get in Touch
 
