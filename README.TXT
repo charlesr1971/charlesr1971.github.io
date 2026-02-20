@@ -1,4 +1,4 @@
-# charlesr1971.github.io
+# mrkodama.github.io
 
 > A personal playground for building small, focused web apps — powered by AI prompts.
 
@@ -25,7 +25,7 @@ Apps on this site are typically built with a combination of:
 Each app lives in its own directory and is designed to be self-contained:
 
 ```
-charlesr1971.github.io/
+mrkodama.github.io/
 ├── index.html          # Landing page / app directory
 ├── app-one/            # Individual app folders
 │   └── index.html
@@ -47,7 +47,7 @@ Speed and simplicity are valued over complexity. If an idea can be expressed in 
 
 ## 🔗 Visit the Site
 
-👉 [charlesr1971.github.io](https://charlesr1971.github.io)
+👉 [mrkodama.github.io](https://mrkodama.github.io)
 
 ## 📬 Get in Touch
 
