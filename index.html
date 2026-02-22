@@ -1,0 +1,385 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes" />
+
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@SilenceBetween_" />
+	<meta name="twitter:creator" content="@charlesr1971" />
+	<meta name="twitter:title" content="Establish Mindfulness | Learning Centre" />
+	<meta name="twitter:description" content="Join Paul Meek and the meditation community at Establish Mindfulness online. Follow, learn, share and contribute mindfulness stories to help others find the right balance in everyday life." />
+
+
+	<meta name="twitter:image" content="http://hub.establishmindfulness.com/images/twitter-card/twitter-card-4.png" />
+
+	<meta property="og:title" content="Establish Mindfulness | Learning Centre" />
+	<meta property="og:description" content="Sharing mindfulness meditation for you to explore and use in everyday life." />
+	<meta property="og:image" content="http://hub.establishmindfulness.com/images/twitter-card/twitter-card-4.png" />
+	<meta property="og:type" content="website" />
+	<meta property="fb:app_id" content="1620298074751742" />
+
+	<meta name="description" content="Join Paul Meek and the meditation community at Establish Mindfulness online. Follow, learn, share and contribute mindfulness stories to help others find the right balance in everyday life." />
+	<meta name="keywords" content="meditation for everyday life, mindfulness for everyday life, meditation for life, mindfulness for life, establish mindfulness, Paul Meek, meditation community" />
+
+	<title>Establish Mindfulness | Dev</title>
+
+	<link rel="icon" href="http://hub.establishmindfulness.com/favicon.ico" />
+	<link rel="icon" type="image/png" href="http://hub.establishmindfulness.com/images/favicon/favicon-16x16.png" sizes="16x16" />
+	<link rel="icon" type="image/png" href="http://hub.establishmindfulness.com/images/favicon/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="http://hub.establishmindfulness.com/images/favicon/favicon-48x48.png" sizes="48x48" />
+	<link rel="icon" type="image/png" href="http://hub.establishmindfulness.com/images/favicon/favicon-96x96.png" sizes="96x96" />
+	<link rel="apple-touch-icon" type="image/png" href="http://hub.establishmindfulness.com/images/favicon/ic_launcher_hdpi.png" sizes="72x72" />
+	<link rel="apple-touch-icon" type="image/png" href="http://hub.establishmindfulness.com/images/favicon/app-icon-ipad.png" sizes="76x76" />
+	<link rel="apple-touch-icon" type="image/png" href="http://hub.establishmindfulness.com/images/favicon/app-icon-114x114.png" sizes="114x114" />
+	<link rel="apple-touch-icon" type="image/png" href="http://hub.establishmindfulness.com/images/favicon/app-icon-iphone@2x.png" sizes="120x120" />
+	<link rel="apple-touch-icon" type="image/png" href="http://hub.establishmindfulness.com/images/favicon/ic_launcher_xxhdpi.png" sizes="144x144" />
+	<link rel="apple-touch-icon" type="image/png" href="http://hub.establishmindfulness.com/images/favicon/app-icon-ipad@2x.png" sizes="152x152" />
+	<link rel="apple-touch-icon" type="image/png" href="http://hub.establishmindfulness.com/images/favicon/iPad-Pro.png" sizes="167x167" />
+	<link rel="apple-touch-icon" type="image/png" href="http://hub.establishmindfulness.com/images/favicon/app-icon-iphone@3x.png" sizes="180x180" />
+
+	<link rel="stylesheet" href="css/styles.css" type="text/css" />
+	<link rel="stylesheet" href="font/font-awesome-4.7.0/css/font-awesome.min.css" />
+	<!-- <link href="external/fonts.googleapis.com/css?family=Anton|Spinnaker|Oswald" rel="stylesheet" /> -->
+	<link href="https://fonts.googleapis.com/css?family=Anton|Spinnaker|Oswald" rel="stylesheet">
+
+	<script src="js/lib/greensock-js/src/minified/TweenMax.min.js" type="text/javascript"></script>
+	<script src="js/framework/jquery.js" type="text/javascript"></script>
+
+	<script type="text/javascript">
+		var $ismobile = true;
+
+		jQuery(document).ready(function() {
+			TweenMax.staggerFromTo('.social-media-icon', 1, { scale: 0, opacity: 0, ease: Elastic.easeOut, delay: 0 }, { scale: 1, opacity: 1, ease: Elastic.easeOut, delay: 0 }, 0.25, allDone1);
+
+			function allDone1() {
+				var overshoot = 5;
+				var period = 0.25;
+				var socialmediaiconcurrent = document.getElementById('social-media-icon-current-twitter');
+				if (socialmediaiconcurrent) {
+					TweenMax.to(socialmediaiconcurrent, 0.5, {
+						scale: 0.25,
+						opacity: 1,
+						onComplete: function() {
+							TweenMax.to(socialmediaiconcurrent, 1.4, {
+								scale: 1,
+								opacity: 1,
+								ease: Elastic.easeOut,
+								easeParams: [overshoot, period]
+							})
+						}
+					});
+				}
+			}
+		});
+	</script>
+
+</head>
+
+<body>
+
+	<div id="wrapper">
+
+		<div id="expandwrapper"></div>
+
+		<div id="innerwrapper" class="ui-expanded">
+
+			<div id="header" class="ui-expanded">
+
+				<div id="logo" class="ui-expanded"><a href="http://localhost:8500/establishmindfulness"></a></div>
+				<div id="header-background" class="ui-expanded"></div>
+				<img id="logo-mobile-img" src="images/logo-medium-v3.png" />
+				<img id="logo-mobile-text" src="images/logo-text.png" />
+
+			</div>
+
+			<div id="innerwrapper-expanded">
+
+				<div id="contentwrapper">
+
+					<div id="contentwrapper-divider" class="divider" style="height:20px;"></div>
+
+					<div style="clear:both;"></div>
+
+					<div id="contentinner">
+
+						<div id="contentnocatalog">
+							
+							<h2>Documentation</h2>
+
+							<div class="data-panel">
+
+								<table class="website-links-icons-block large">
+									<tbody>
+										<tr>
+									    <td class="website-links-icon-block-container large">
+									        <!-- Change the icon class to fa-book or fa-code -->
+									        <a class="website-links-icon-block globe large" href="https://establishmindfulness.dev/fw1" style="background:#5d8aa8;"><i class="fa fa-book"></i></a>
+									    </td>
+									    <td class="website-links-text www">
+									        <a class="website-links-text-block" href="https://establishmindfulness.dev/fw1">FW/1 Documentation (Mirror)</a>
+									    </td>
+										</tr>
+										<tr>
+											<td colspan="2" class="website-links-icon-divider">
+											</td>
+											<td></td>
+										</tr>
+									</tbody>
+								</table>
+								
+							</div>
+
+							<h2>Social Media Links</h2>
+
+							<div class="data-panel">
+
+								<table class="social-media-icons-block large">
+									<tbody>
+										<tr id="social-media-icon-block-row-facebook" class="social-media-icon-block-row">
+											<td class="social-media-icon-block-container large">
+												<a class="social-media-icon-block facebook large" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fhub%2Eestablishmindfulness%2Ecom%3FproxyReferrer%3Dapp%26proxyUrl%3Dhttps%253A%252F%252Fapp%252Eestablishmindfulness%252Ecom%26proxyDirection%3Dout" target="_blank" style="background:#1774eb;"><i id="social-media-icon-facebook" class="fa fa-facebook social-media-icon"></i></a>
+											</td>
+											<td class="social-media-text">
+												<a class="social-media-text-block" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fhub%2Eestablishmindfulness%2Ecom%3FproxyReferrer%3Dapp%26proxyUrl%3Dhttps%253A%252F%252Fapp%252Eestablishmindfulness%252Ecom%26proxyDirection%3Dout" target="_blank">Share to Facebook</a>
+												<div id="social-media-icon-current-facebook" class="social-media-icon-current" style="opacity:0;background:#1774eb;"></div>
+											</td>
+										</tr>
+										<tr>
+											<td colspan="2" class="social-media-icon-divider">
+											</td>
+											<td></td>
+										</tr>
+										<tr id="social-media-icon-block-row-twitter" class="social-media-icon-block-row">
+											<td class="social-media-icon-block-container large">
+
+												<a class="social-media-icon-block twitter large" href="https://twitter.com/share?text=Establish%20Mindfulness%20%7C%20Learning%20Centre&amp;url=http%3A%2F%2Fhub%2Eestablishmindfulness%2Ecom%3FproxyReferrer%3Dapp%26proxyUrl%3Dhttps%253A%252F%252Fapp%252Eestablishmindfulness%252Ecom%26proxyDirection%3Dout" target="_blank" style="background:#28aae1;"><i id="social-media-icon-twitter" class="fa fa-twitter social-media-icon"></i></a>
+
+											</td>
+											<td class="social-media-text">
+
+												<a class="social-media-text-block" href="https://twitter.com/share?text=Establish%20Mindfulness%20%7C%20Learning%20Centre&amp;url=http%3A%2F%2Fhub%2Eestablishmindfulness%2Ecom%3FproxyReferrer%3Dapp%26proxyUrl%3Dhttps%253A%252F%252Fapp%252Eestablishmindfulness%252Ecom%26proxyDirection%3Dout" target="_blank">Share to Twitter</a>
+
+												<div id="social-media-icon-current-twitter" class="social-media-icon-current" style="opacity:0;background:#28aae1;"></div>
+											</td>
+										</tr>
+										<tr>
+											<td colspan="2" class="social-media-icon-divider">
+											</td>
+											<td></td>
+										</tr>
+										<tr id="social-media-icon-block-row-tumblr" class="social-media-icon-block-row">
+											<td class="social-media-icon-block-container large">
+
+												<a class="social-media-icon-block tumblr large" href="https://www.tumblr.com/share/link?name=Establish%20Mindfulness%20%7C%20Learning%20Centre&amp;url=http%3A%2F%2Fhub%2Eestablishmindfulness%2Ecom%3FproxyReferrer%3Dapp%26proxyUrl%3Dhttps%253A%252F%252Fapp%252Eestablishmindfulness%252Ecom%26proxyDirection%3Dout" target="_blank" style="background:#314358;"><i id="social-media-icon-tumblr" class="fa fa-tumblr social-media-icon"></i></a>
+
+											</td>
+											<td class="social-media-text">
+
+												<a class="social-media-text-block" href="https://www.tumblr.com/share/link?name=Establish%20Mindfulness%20%7C%20Learning%20Centre&amp;url=http%3A%2F%2Fhub%2Eestablishmindfulness%2Ecom%3FproxyReferrer%3Dapp%26proxyUrl%3Dhttps%253A%252F%252Fapp%252Eestablishmindfulness%252Ecom%26proxyDirection%3Dout" target="_blank">Share to Tumblr</a>
+
+												<div id="social-media-icon-current-tumblr" class="social-media-icon-current" style="opacity:0;background:#314358;"></div>
+											</td>
+										</tr>
+										<tr>
+											<td colspan="2" class="social-media-icon-divider">
+											</td>
+											<td></td>
+										</tr>
+										<tr id="social-media-icon-block-row-linkedin" class="social-media-icon-block-row">
+											<td class="social-media-icon-block-container large">
+
+												<a class="social-media-icon-block linkedin large" href="https://www.linkedin.com/shareArticle?mini=true&amp;title=Establish%20Mindfulness%20%7C%20Learning%20Centre&amp;url=http%3A%2F%2Fhub%2Eestablishmindfulness%2Ecom%3FproxyReferrer%3Dapp%26proxyUrl%3Dhttps%253A%252F%252Fapp%252Eestablishmindfulness%252Ecom%26proxyDirection%3Dout" target="_blank" style="background:#225982;"><i id="social-media-icon-linkedin" class="fa fa-linkedin social-media-icon"></i></a>
+
+											</td>
+											<td class="social-media-text">
+
+												<a class="social-media-text-block" href="https://www.linkedin.com/shareArticle?mini=true&amp;title=Establish%20Mindfulness%20%7C%20Learning%20Centre&amp;url=http%3A%2F%2Fhub%2Eestablishmindfulness%2Ecom%3FproxyReferrer%3Dapp%26proxyUrl%3Dhttps%253A%252F%252Fapp%252Eestablishmindfulness%252Ecom%26proxyDirection%3Dout" target="_blank">Share to LinkedIn</a>
+
+												<div id="social-media-icon-current-linkedin" class="social-media-icon-current" style="opacity:0;background:#225982;"></div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+
+							</div>
+
+							<h2>Website Links</h2>
+
+							<div class="data-panel">
+
+								<table class="website-links-icons-block large">
+									<tbody>
+										<tr>
+											<td class="website-links-icon-block-container large">
+												<a class="website-links-icon-block globe large" href="https://www.establishmindfulness.com" target="_blank" style="background:#7db3a6;"><i class="fa fa-globe"></i></a>
+											</td>
+											<td class="website-links-text www">
+												<a class="website-links-text-block" href="https://www.establishmindfulness.com" target="_blank">www.establishmindfulness.com</a>
+											</td>
+										</tr>
+										<tr>
+											<td colspan="2" class="website-links-icon-divider">
+											</td>
+											<td></td>
+										</tr>
+										<tr>
+											<td colspan="2" class="website-links-icon-block-description">
+												<h3>Follow and reflect</h3>
+												For finding the right balance in everyday life
+											</td>
+										</tr>
+										<tr>
+											<td colspan="2" class="website-links-icon-divider">
+											</td>
+											<td></td>
+										</tr>
+										<tr>
+											<td class="website-links-icon-block-container large">
+												<a class="website-links-icon-block globe large" href="https://app.establishmindfulness.com" target="_blank" style="background:#7db3a6;"><i class="fa fa-globe"></i></a>
+											</td>
+											<td class="website-links-text app">
+												<a class="website-links-text-block" href="https://app.establishmindfulness.com" target="_blank">app.establishmindfulness.com</a>
+											</td>
+										</tr>
+										<tr>
+											<td colspan="2" class="website-links-icon-divider">
+											</td>
+											<td></td>
+										</tr>
+										<tr>
+											<td colspan="2" class="website-links-icon-block-description">
+												<h3>Learn and apply</h3>
+												Sharing mindfulness meditation for you to explore and use in everyday life
+											</td>
+										</tr>
+										<tr>
+											<td colspan="2" class="website-links-icon-divider">
+											</td>
+											<td></td>
+										</tr>
+										<tr>
+											<td class="website-links-icon-block-container large">
+												<a class="website-links-icon-block globe large" href="https://community.establishmindfulness.com" target="_blank" style="background:#7db3a6;"><i class="fa fa-globe"></i></a>
+											</td>
+											<td class="website-links-text community">
+												<a class="website-links-text-block" href="https://community.establishmindfulness.com" target="_blank">community.establishmindfulness.com</a>
+											</td>
+										</tr>
+										<tr>
+											<td colspan="2" class="website-links-icon-divider">
+											</td>
+											<td></td>
+										</tr>
+										<tr>
+											<td colspan="2" class="website-links-icon-block-description">
+												<h3>Join and connect</h3>
+												For sharing your experiences of mindfulness with others
+											</td>
+										</tr>
+										<tr>
+											<td colspan="2" class="website-links-icon-divider">
+											</td>
+											<td></td>
+										</tr>
+										<tr>
+											<td class="website-links-icon-block-container large">
+												<a class="website-links-icon-block globe large" href="https://advert.establishmindfulness.com" target="_blank" style="background:#b4c1b1;"><i class="fa fa-globe"></i></a>
+											</td>
+											<td class="website-links-text advert">
+												<a class="website-links-text-block" href="https://advert.establishmindfulness.com" target="_blank">advert.establishmindfulness.com</a>
+											</td>
+										</tr>
+										<tr>
+											<td colspan="2" class="website-links-icon-divider">
+											</td>
+											<td></td>
+										</tr>
+										<tr>
+											<td colspan="2" class="website-links-icon-block-description">
+												<h3>Advertise with us</h3>
+												For ethical advertisers with a like-minded approach
+											</td>
+										</tr>
+										<tr>
+											<td colspan="2" class="website-links-icon-divider">
+											</td>
+											<td></td>
+										</tr>
+									</tbody>
+								</table>
+
+							</div>
+							
+							<h2>Playground</h2>
+
+							<div class="data-panel">
+
+								<table class="website-links-icons-block large">
+									<tbody>
+										<tr>
+									    <td class="website-links-icon-block-container large">
+									        <a class="website-links-icon-block globe large" href="https://establishmindfulness.dev/playground/ai-todo-list" style="background:#f39c12;"><i class="fa fa-flask"></i></a>
+									    </td>
+									    <td class="website-links-text www">
+									        <a class="website-links-text-block" href="https://establishmindfulness.dev/playground/ai-todo-list">Todo List App</a>
+									    </td>
+										</tr>
+										<tr>
+											<td colspan="2" class="website-links-icon-divider">
+											</td>
+											<td></td>
+										</tr>
+										<tr>
+											<td colspan="2" class="website-links-icon-block-description">
+												<h3>An interactive task manager</h3>
+												A simple todo list app, where new items can be added and existing items can be reordered, edited or deleted. Items can be moved, either using up/down arrows, or just dragged. Data can be persisted, in local storage, for up to 90 days
+											</td>
+										</tr>
+										<tr>
+											<td colspan="2" class="website-links-icon-divider">
+											</td>
+											<td></td>
+										</tr>
+									</tbody>
+								</table>
+								
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="public-copright-container">
+
+					<div class="copright-notice">
+
+						<div class="copright-notice-container">
+
+							<div>Copyright Establish Mindfulness Ltd © 2019</div>
+
+							<div>
+								Co Registration No: 11496167 | Trade Mark No: UK00003295846
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</body>
+
+</html>
