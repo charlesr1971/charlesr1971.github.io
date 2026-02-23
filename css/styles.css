@@ -89,6 +89,14 @@ h2 {
 	display: none;
 }
 
+#github-mobile-img {
+	display: none;
+}
+
+#github-mobile-img-background {
+	display: none;
+}
+
 #logo-mobile-text {
 	display: none;
 }
@@ -583,6 +591,30 @@ div.public-copright-container .copright-notice .copright-notice-container div:nt
 	#logo-mobile-text strong span {
 		color: rgba(255,255,255,0.5);
 	}
+	
+	#github-mobile-img {
+		position: absolute;
+		display: block;
+		top: 100px;
+		left: 24px;
+		width: 52px;
+		border: 0px;
+		z-index: 1002;
+	}
+	
+	#github-mobile-img-background {
+		position: absolute;
+		display: block;
+		top: 96px;
+		left: 20px;
+		width: 60px;
+		height: 60px;
+		border-radius: 50%;
+		background: #ffffff;
+		border: 0px;
+		z-index: 1001;
+	}
+
 
 	#innerwrapper-expanded {
 		background-color: transparent;
