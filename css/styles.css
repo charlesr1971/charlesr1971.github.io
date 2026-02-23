@@ -90,11 +90,26 @@ h2 {
 }
 
 #github-mobile-img {
-	display: none;
+	position: absolute;
+	display: block;
+	top: 33px;
+	right: 28px;
+	width: 71px;
+	border: 0px;
+	z-index: 1002;
 }
 
 #github-mobile-img-background {
-	display: none;
+	position: absolute;
+	display: block;
+	top: 29px;
+	right: 24px;
+	width: 79px;
+	height: 79px;
+	border-radius: 50%;
+	background: #ffffff;
+	border: 0px;
+	z-index: 1001;
 }
 
 #logo-mobile-text {
