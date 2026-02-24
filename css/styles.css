@@ -6,7 +6,7 @@ body {
 
 h2 {
 	float: left;
-	color: rgba(0, 0, 0, 0.05);
+	color: rgba(0, 0, 0, 0.075);
 	font-family: Anton;
 	font-size: 56px;
 	line-height: 56px; 
@@ -165,7 +165,7 @@ h2 {
 
 .toggle-visibilty-sections a {
 	text-decoration: none;
-	color: rgba(0, 0, 0, 0.05);
+	color: rgba(0, 0, 0, 0.125);
 	font-family: Anton;
 	font-size: 56px;
 	line-height: 56px; 
